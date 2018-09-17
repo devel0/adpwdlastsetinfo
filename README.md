@@ -1,6 +1,6 @@
 # adpwdlastsetinfo
 
-describe active directory pwdLastSet in a human readable way
+alert by email when active directory user password going to expire
 
 ## scenario
 
