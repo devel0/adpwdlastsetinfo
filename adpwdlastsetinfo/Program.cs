@@ -6,7 +6,7 @@ namespace adpwdlastsetinfo
     {
         static void Main(string[] args)
         {
-            if (args.Length < 1 || args.Length > 2)
+            if (args.Length < 1 || args.Length > 3)
             {
                 System.Console.WriteLine($"Synopsis: {AppDomain.CurrentDomain.FriendlyName} <pwdLastSet> [expireDays] [alertDays]");
                 System.Console.WriteLine($"Description: returns human readable datetime of given pwdLastSet long number and days from last set");
