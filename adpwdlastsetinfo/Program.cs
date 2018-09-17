@@ -15,11 +15,13 @@ namespace adpwdlastsetinfo
             }
             long age = long.Parse(args[0]);
             Console.WriteLine($"pwdLastSet: {DateTime.FromFileTimeUtc(age)}");
-            var daysFromLastSet = (DateTime.Now - DateTime.FromFileTimeUtc(age)).TotalDays;
+            var daysFromLastSet = (int)(DateTime.Now - DateTime.FromFileTimeUtc(age)).TotalDays;
             Console.WriteLine($"daysFromLastSet: {daysFromLastSet}");
+            
             if (args.Length == 2)
             {
                 int expireDays = int.Parse(args[1]);
+                Console.WriteLine($"daysToExpiration: {expireDays - daysFromLastSet}");
                 Environment.Exit((daysFromLastSet <= expireDays) ? 0 : 2);
             }            
         }
