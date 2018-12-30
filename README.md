@@ -5,7 +5,7 @@ alert by email when active directory user password going to expire
 ## scenario
 
 - samba 4 dc
-- want to inform IT admin of users with expiring password at least 7 days before sending an email through a [wrapper script](https://github.com/devel0/knowledge/blob/master/linux/send-email-wrapper.md)
+- want to inform IT admin of users with expiring password at least 7 days before sending an email through a [wrapper script](https://github.com/devel0/knowledge/blob/master/doc/send-email-wrapper.md)
 
 ## howto
 
